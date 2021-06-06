@@ -1,0 +1,115 @@
+body {
+  background-color: #f1f2f6; }
+
+.scroll {
+  margin-left: 1rem;
+  padding-bottom: 1rem;
+  position: fixed;
+  bottom: 0;
+  right: 20px; }
+  .scroll .iconify {
+    font-size: 3rem; }
+
+.cen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.button.btn {
+  background-color: #26c5a3;
+  color: white;
+  font-family: Signika Negative;
+  text-transform: uppercase;
+  border: none; }
+
+.navbar-brand .title {
+  font-style: 3rem;
+  color: #f1f2f6;
+  font-family: Signika Negative; }
+
+.navbar-end a.navbar-item {
+  color: #f1f2f6;
+  font-family: Signika Negative;
+  font-size: 1rem; }
+  .navbar-end a.navbar-item:hover {
+    background-color: transparent;
+    color: #01bd95; }
+
+.hero {
+  background: linear-gradient(rgba(50, 48, 48, 0.4), rgba(50, 48, 48, 0.7)), url("./hero.jpg") fixed no-repeat center/cover; }
+
+.hero-body {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column; }
+  .hero-body .title {
+    font-family: Kameron; }
+  .hero-body .content {
+    width: 60%; }
+
+#card {
+  text-align: center; }
+  #card .column {
+    padding-top: 3rem; }
+  #card .iconify {
+    font-size: 3rem; }
+  #card .subtitle {
+    font-family: Signika Negative;
+    font-weight: bolder; }
+  #card .content {
+    font-family: Signika Negative;
+    color: #a7a6a7; }
+
+#sec {
+  background: linear-gradient(rgba(50, 48, 48, 0.5), rgba(50, 48, 48, 0.8)), url("./sec.jpg") fixed no-repeat center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  #sec .iconify {
+    font-size: 3rem; }
+  #sec .content {
+    width: 60%;
+    font-family: Signika Negative; }
+
+/*
+label : light small
+inp : plH blur thick
+*/
+#form {
+  font-family: Signika Negative; }
+  #form .label {
+    color: grey;
+    font-size: .9rem; }
+  #form .input {
+    color: #777778;
+    letter-spacing: 1px; }
+  #form .content {
+    width: 60%;
+    color: grey; }
+
+/* footer
+*/
+.footer {
+  font-family: Signika Negative; }
+  .footer .icon {
+    margin: .8rem;
+    border-radius: 50%; }
+    .footer .icon:hover {
+      background-color: #777778; }
+      .footer .icon:hover .iconify {
+        color: white; }
+  .footer .iconify {
+    font-size: 3rem; }
+
+.cp {
+  background-color: #2c3e50;
+  color: #f1f2f6;
+  padding: 1rem;
+  text-align: center;
+  font-family: Signika Negative;
+  letter-spacing: 1px; }
+
+/*# sourceMappingURL=style.css.map */

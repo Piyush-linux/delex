@@ -1,0 +1,147 @@
+$p1_d:#01bd95 ;
+$p1:#26c5a3 ;
+$p1_l:#55e3c6 ;
+// $white:#ecf0f1;
+$white:#f1f2f6;
+$grey:#bbbbbb;
+$f1:Kameron;
+$f2:Signika Negative;
+$dark:#777778;
+body{
+	background-color:$white;
+}
+.scroll{
+	margin-left: 1rem;
+	padding-bottom: 1rem;
+	position: fixed;
+	bottom: 0;
+	right: 20px;
+	.iconify{
+		font-size: 3rem;
+	}
+}
+.cen{
+	display: flex;
+	    flex-direction: column;
+		align-items: center;
+	    justify-content: center;
+}
+.button.btn{
+	background-color: $p1;
+	color: white;
+	font-family: $f2;
+	// font-weight: bolder;
+	text-transform: uppercase;
+	border:none;
+}
+.navbar-brand .title{
+	font-style: 3rem;
+	color:$white;
+	font-family: $f2;
+}
+.navbar-end a.navbar-item{
+// .navbar-end a{
+	color:$white;
+	font-family: $f2;
+	font-size: 1rem;
+	&:hover{
+		background-color:transparent;
+		color:$p1_d;
+	}
+}
+.hero{
+	background: linear-gradient(rgba(50, 48, 48,0.4),rgba(50, 48, 48,0.7)),url('./hero.jpg') fixed no-repeat center / cover;
+}
+.hero-body{
+	align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    .title{
+    	font-family:$f1;
+    }
+    .content{
+    	width: 60%;
+    }
+}
+
+// card
+#card{
+		text-align: center;
+		.column{
+			padding-top: 3rem;
+		}
+	.iconify{
+		font-size: 3rem;
+	}
+	.subtitle{
+		font-family: $f2; 
+		font-weight: bolder;
+	}
+	.content{
+		font-family: $f2;
+		color: #a7a6a7 ;
+	}
+}
+// sec
+#sec{
+		background: linear-gradient(rgba(50, 48, 48,0.5),rgba(50, 48, 48,0.8)),url('./sec.jpg') fixed no-repeat center / cover;
+	    display: flex;
+	    flex-direction: column;
+		align-items: center;
+	    justify-content: center;
+    .iconify{
+    	font-size: 3rem;
+    }
+	.content{
+		width: 60%;
+		font-family: $f2;
+	}
+}
+/*
+label : light small
+inp : plH blur thick
+*/
+#form{
+		font-family: $f2;
+	.label{
+		color:grey;
+		font-size: .9rem;
+	}
+	.input{
+		color:$dark;
+		letter-spacing: 1px;
+	}
+	.content{
+		width: 60%;
+		color:grey;
+	}
+
+}
+/* footer
+*/
+.footer{
+	font-family: $f2;
+	.icon{
+		margin: .8rem;
+		border-radius: 50%;
+		&:hover{
+			background-color: $dark;
+			.iconify{
+				color:white;
+			}
+		}
+	}
+	.iconify{
+		font-size:3rem;
+	}
+}
+// copy right has-background-dark has-text-white-ter py-3 has-text-centered
+.cp{
+	background-color: #2c3e50;
+	color:$white;
+	padding: 1rem;
+	text-align:center;
+	font-family: $f2;
+	letter-spacing:1px;
+}
