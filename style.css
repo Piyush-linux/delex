@@ -1,22 +1,11 @@
 body {
   background-color: #f1f2f6; }
 
-.preloader {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 1000; }
-
 .scroll {
-  margin-left: 1rem;
-  padding-bottom: 1rem;
   position: fixed;
   bottom: 0;
-  right: 20px; }
+  right: 20px;
+  padding-bottom: 1rem; }
   .scroll .iconify {
     font-size: 3rem; }
 

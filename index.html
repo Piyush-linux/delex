@@ -18,10 +18,7 @@
 </head>
 
 <body>
-    <div class="preloader">
-        <img src="preloader.gif" alt="">
-    </div>
-    <button class="button btn scroll">
+    <button class="button is-primary scroll">
         <span class="icon is-medium has-text-white-ter">
             <span class="iconify" data-icon="ant-design:caret-up-outlined" data-inline="false"></span>
         </span>
@@ -239,10 +236,11 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
 <script type="text/javascript">
-window.onload = function(){
-        //hide the preloader
-        document.querySelector(".preloader").style.display = "none";
-    }
+// window.onload = function(){
+//         //hide the preloader
+//         document.querySelector(".preloader").style.display = "none";
+//     }
+
 $(window).scroll(function(){
         if ($(this).scrollTop() > 100) {
             $('.scroll').fadeIn();
@@ -250,7 +248,6 @@ $(window).scroll(function(){
             $('.scroll').fadeOut();
         }
     });
-
     //Click event to scroll to top
     $('.scroll').click(function(){
         $('html, body').animate({scrollTop : 0},800);
