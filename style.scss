@@ -10,6 +10,16 @@ $dark:#777778;
 body{
 	background-color:$white;
 }
+.preloader{
+          position: absolute;
+              top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+          width: 100vw;
+          height: 100vh;
+          z-index: 1000;
+      }
 .scroll{
 	margin-left: 1rem;
 	padding-bottom: 1rem;
@@ -33,6 +43,12 @@ body{
 	// font-weight: bolder;
 	text-transform: uppercase;
 	border:none;
+		position:relative;
+	&:hover{
+		box-shadow: 5px 5px 5px 2px $grey;
+		bottom:3px;
+		transition: .2s;
+	}
 }
 .navbar-brand .title{
 	font-style: 3rem;
@@ -46,7 +62,7 @@ body{
 	font-size: 1rem;
 	&:hover{
 		background-color:transparent;
-		color:$p1_d;
+		color:$p1_l;
 	}
 }
 .hero{
@@ -126,9 +142,9 @@ inp : plH blur thick
 		margin: .8rem;
 		border-radius: 50%;
 		&:hover{
-			background-color: $dark;
+			background-color: white;
 			.iconify{
-				color:white;
+				color:$p1_d;
 			}
 		}
 	}
