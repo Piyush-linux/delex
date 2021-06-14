@@ -1,3 +1,10 @@
+// media
+@mixin mobile(){
+	@media screen and (max-width : 550px){
+		@content;
+	}
+}
+// variable
 $p1_d:#01bd95 ;
 $p1:#26c5a3 ;
 $p1_l:#55e3c6 ;
@@ -7,11 +14,13 @@ $grey:#bbbbbb;
 $f1:Kameron;
 $f2:Signika Negative;
 $dark:#777778;
+// pre
 body{
 	background-color:$white;
 }
 
 .scroll{
+	z-index: 999;
 	position: fixed;
 	bottom: 0;
 	right: 20px;
@@ -40,6 +49,7 @@ body{
 		transition: .2s;
 	}
 }
+// nav
 .navbar-brand .title{
 	font-style: 3rem;
 	color:$white;
@@ -59,6 +69,7 @@ body{
 	background: linear-gradient(rgba(50, 48, 48,0.4),rgba(50, 48, 48,0.7)),url('./hero.jpg') fixed no-repeat center / cover;
 }
 .hero-body{
+	text-align:center;
 	align-items: center;
     justify-content: center;
     display: flex;
@@ -68,6 +79,9 @@ body{
     }
     .content{
     	width: 60%;
+    	@include mobile{
+    		width: 100%;
+    	}
     }
 }
 
@@ -102,6 +116,9 @@ body{
 	.content{
 		width: 60%;
 		font-family: $f2;
+		@include mobile(){
+			width: 90%;
+		}
 	}
 }
 /*
@@ -121,6 +138,9 @@ inp : plH blur thick
 	.content{
 		width: 60%;
 		color:grey;
+		@include mobile(){
+			width: 90%;
+		}
 	}
 
 }

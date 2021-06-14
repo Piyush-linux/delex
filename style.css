@@ -2,6 +2,7 @@ body {
   background-color: #f1f2f6; }
 
 .scroll {
+  z-index: 999;
   position: fixed;
   bottom: 0;
   right: 20px;
@@ -44,6 +45,7 @@ body {
   background: linear-gradient(rgba(50, 48, 48, 0.4), rgba(50, 48, 48, 0.7)), url("./hero.jpg") fixed no-repeat center/cover; }
 
 .hero-body {
+  text-align: center;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -52,6 +54,9 @@ body {
     font-family: Kameron; }
   .hero-body .content {
     width: 60%; }
+    @media screen and (max-width: 550px) {
+      .hero-body .content {
+        width: 100%; } }
 
 #card {
   text-align: center; }
@@ -77,6 +82,9 @@ body {
   #sec .content {
     width: 60%;
     font-family: Signika Negative; }
+    @media screen and (max-width: 550px) {
+      #sec .content {
+        width: 90%; } }
 
 /*
 label : light small
@@ -93,6 +101,9 @@ inp : plH blur thick
   #form .content {
     width: 60%;
     color: grey; }
+    @media screen and (max-width: 550px) {
+      #form .content {
+        width: 90%; } }
 
 /* footer
 */
